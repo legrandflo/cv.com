@@ -1,0 +1,540 @@
+/* GENERAL*/
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.photo {
+    border-radius: 100px;
+    border: 2px solid #aaa;
+    width: 300px;
+    height: 300px;
+}
+
+section {
+    /*marge entre toute section top left bottom right*/
+    padding: 45px 0 80px 0;
+}
+
+section .heading {
+    /* texte sous la photo et bouton et les titres*/
+    text-align: center;
+    /* centrer la partie*/
+    padding-bottom: 40px;
+    /*espace en dessous de la partie*/
+}
+
+section .heading h2 {
+    /*titre de chaque section en majuscule*/
+    text-transform: uppercase;
+}
+
+.ligne-bleue {
+    width: 300px;
+    height: 3px;
+    background: blue;
+    margin: 0 auto;
+    /*centrer la ligne*/
+}
+
+.ligne-blanche {
+    width: 300px;
+    height: 3px;
+    background: white;
+    margin: 0 auto;
+    /*centrer la ligne*/
+}
+
+/*MENU*/
+.navbar{
+    background: blue;
+    font-size: 12px;
+    letter-spacing: 4px;/*espacement entre les lettres*/
+    text-transform:uppercase;
+    font-weight: bold;
+}
+.navbar .navbar-nav{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse{
+    text-align: center;
+}
+.navbar li a {
+    color: #fff !important;/*important car il faut changer la couleur donner par la class bootstrap qui est prioritaire*/
+}
+.navbar-nav li a:hover, .navbar-nav li.active a  {/*quand on passe sur une categorie du menu*/
+    color: blue !important;
+    background-color: #fff !important;
+}
+/*enlever la bordure du bouton de 3 traits*/
+.navbar-default .navbar-toggle{
+    border-style : none;
+}
+.icon-bar {/*couleur des traist du bouton en blanc*/
+    background-color: #fff !important;
+}
+
+/* ABOUT */
+
+#about {
+    padding-top: 100px;    /*marge du dessus*/
+    padding-bottom:100px;/*marge du dessous--occupe la taille ecran en hauteur*/
+    background-image: url("../images/keyboard-1983410_1920.jpg");
+    border : 5px solid blue;
+    
+}
+
+.profile-picture {
+    /* photo*/
+    text-align: center;
+    margin: 0 auto;
+    /* photo au centre*/
+    float: none;
+    /* photo au centre pour annuler float : left qui est avec col-md-4 de bootstrap*/
+    padding-top:200px;
+}
+
+#about .heading h1 {
+    /*h1 du heading = florence*/
+    color: blue;
+    /* couleur blanche*/
+    text-transform: uppercase;
+    /* en majuscule */
+}
+
+#about .heading h3 {
+    /*h3 du heading = developpeur web*/
+    color: #000;
+    /* noir pas gris (avant)*/
+}
+
+.button1 {
+    /* bouton telecharger Cv*/
+    font-weight: bold;
+    /*gras*/
+    text-transform: uppercase;
+    /*majuscule*/
+    color: white;
+    /*texte blanc*/
+    border: 1px solid white;
+    /* bordure blanche*/
+    display: inline-block;
+    /*pour eloigner du texte car <a> est un inline: developpeuse*/
+    margin-top: 20px;
+    /*marge du haut espcé de developpeuse*/
+    padding: 18px 50px;
+    /* espace entre bordure et texte bouton*/
+    border-radius: 3px;
+    /*bord arrondi*/
+    transition: all 0.3s ease-in 0s;
+    /* change le temps de modification du bouton au hover passe a 0.3s*/
+}
+
+.button1:hover {
+    /*changement du style donné par bootstrap au passage de la souris*/
+    background: white;
+    /* fond blanc*/
+    color: blue;
+    /*texte bleu*/
+    text-decoration: none;
+    /*retiré le souligné du texte*/
+}
+
+img {
+    /*pour qu'elles prennent toute la place*/
+    max-width: 100%;
+    height: auto;
+}
+
+/*competences*/
+
+#competences {
+    /*zone competences*/
+    background: #fff;
+    /*il l'est par defaut*/
+}
+
+#competences .heading h2 {
+    /*titre competences*/
+    color: blue;
+}
+
+#competences .progress {
+    /*zone grise des progress barre*/
+    height: 100%;
+    margin: 30px 20px;
+    /*marge entre chaque ligne de progress*/
+    backface-visibility: #ddd;
+    /*fond gris des progress barres*/
+}
+
+#competences .progress-bar {
+    /*chaque progress-bar la partie coloré*/
+    background: blue;
+    margin: 10px 10px;
+    /*marge de gris en haut et bas et côté*/
+}
+
+#competences .progress h5 {
+    /*titre h5 qui sont dans progress bar*/
+    text-shadow: 1px 1px 1px black;
+    /*ombre*/
+}
+
+/*expériences*/
+
+#projet-stages-experiences {
+    background: blue;
+}
+
+#projet-stages-experiences .heading h2 {
+    color: white;
+}
+
+ul {
+    /*enlever les puces de la liste*/
+    list-style-type: none;
+}
+
+.timeline {
+    /*element ul qui comprend tous les li*/
+    padding: 30px 10px;
+    position: relative;
+}
+
+.timeline:before {
+    /*ligne droite verticale*/
+    top: 0;
+    /*coller en haut de partie timeline*/
+    bottom: 0;
+    /* et coller en bas*/
+    position: absolute;
+    content: " ";
+    width: 5px;
+    /* largeur de 5px*/
+    background-color: #333;
+    left: 50%;
+    /* gauche 50 px la met au milieu*/
+    margin-left: -2.5px;
+    /*comme width =5px on revient de la moitié pour qu'elle soit bien au milieu*/
+}
+
+.timeline>li {
+    /*>li correspond au premier li*/
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline>li:after {
+    /*after et apres element*/
+    clear: both;
+    /*nettoie float-left et right*/
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline li .timeline-badge {
+    /* glyphicone de la valise placé au centre et dans un rond gris*/
+    color: blue;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    /* font size represente la taille du glyphicone, assimilé a un caractere*/
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #ddd;
+    /*font du rond gris clair*/
+    border-radius: 50%;
+    /*fait le rond*/
+}
+
+.timeline-panel-container {
+    /*position des containers blancs a gauche*/
+    width: 50%;
+    float: left;
+}
+
+.timeline-panel-container-inverted {
+    /*position des containers blancs a droite*/
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel {
+    /*toutes les  boites blanches*/
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    /*marge a droite entre boite blanche et la ligne verticale*/
+    border: 1px solid #d4d4d4;
+    /*bordure de la boite*/
+    border-radius: 7px;
+    padding: 20px 25px;
+    /*marge interieur*/
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    /*ombre legere de la boite*/
+    background-color: #fff;
+}
+
+.timeline-panel-container-inverted .timeline-panel {
+    /*boite blanche de droite*/
+    float: left;
+    margin-left: 40px;
+}
+
+.timeline-panel:after {
+    /*triangle qui forme flechede la boite blanche*/
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+    /*contenu pour que element after apparaisse a ecran*/
+}
+
+.timeline-panel-container-inverted .timeline-panel:after {
+    /*fleche a gauche pour boite de droite*/
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-heading h3 {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.timeline-heading h4 {
+    color: blue;
+}
+
+/*formation-education*/
+
+#formation-education {
+    background: #fff;
+}
+
+#education .heading h2 {
+    color: blue;
+}
+
+.education-block {
+    width: 80%;
+    /*largeur du block dans page*/
+    margin: 0 auto;
+    /*centrer par rapport au container*/
+    text-align: center;
+    /*texte centrer*/
+    padding: 30px;
+    /*marge exterieur 30 4 cotes*/
+    background: #ddd;
+    /*fon gris clair*/
+    border-radius: 10px;
+    /*bord arrondi*/
+    border: 2px solid #ccc;
+    /*bordure gris foncé*/
+    box-shadow: 5px 5px 5px rgb(94, 93, 93);
+    margin-bottom: 20px;
+    /*marge bas*/
+}
+
+.education-block h5 {
+    /*date*/
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.education-block .glyphicon {
+    font-size: 40px;
+}
+
+.education-block h3 {
+    color: blue;
+}
+
+.education-block h4 {
+    margin-bottom: 20px;
+}
+
+.education-block .ecole-label {
+    color: #888;
+}
+
+.education-block p {
+    font-weight: bold;
+}
+
+.education-block .ligne-bleue {
+    margin-bottom: 20px;
+}
+
+/*portfolio*/
+
+#portfolio {
+    background: blue;
+}
+
+#portfolio .heading h2 {
+    color: white;
+}
+
+#portfolio h5{
+    color: #fff;
+}
+#portfolio .thumbnail{
+    border: 4px solid #ddd ;
+    box-shadow: -5px 5px 5px #333;
+    margin-bottom:50px;
+}
+#portfolio .thumbnail:hover{
+    border: 4px solid yellow ;
+    box-shadow: none;
+
+}
+#portfolio .thumbnail img {
+    /*image qui est dans thumbnail de portfolio*/
+    width: 100%;
+    height: 160px;
+    filter: grayscale(100%);
+    /*image en noir et blanc*/
+    -webkit-filter: grayscale(100%);
+    /*pour chrome*/
+}
+
+#portfolio .thumbnail img:hover {
+    /*image qui est dans thumbnail de portfolio --- au passage de souris*/
+    filter: none;
+    /*suppression filtre noir et blanc*/
+    -webkit-filter: none;
+    /*pour chrome*/
+}
+#portfolio .thumbnail + .tooltip > .tooltip-inner{
+    background-color: yellow;
+    color:blue;
+}
+
+
+/*centres d'interets*/
+
+#centres-interets {
+    background: #fff;
+}
+
+#centres-interets .heading h2 {
+    color: blue;
+}
+#centres-interets .carousel{
+    margin-top:200px;
+    margin-bottom :200px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    /*fleche gauche et droite*/
+    background-image: none;
+    /*on enleve leur fond gris*/
+    color: blue;
+    /*on les colore en blue*/
+}
+/*faire apparaitre les ronds rouges sous les slides ---carousel-indicators*/
+.carousel-indicators {
+    bottom: 0px;
+}
+.carousel-indicators li {
+    border-color: blue;
+}
+.carousel-indicators li.active {/*attention li.active pas li:active*/
+    background-color: blue;
+}
+#myCarousel .item {
+    padding: 40px 30px;
+}
+#myCarousel .item h3 {
+    color: blue;
+    font-style: italic;
+}
+.item img{
+    margin: 0 auto;
+    width:20%;
+    height:20%;
+}
+
+/*a propos de moi*/
+#a-propos-de-moi {
+    padding-bottom:30px;
+}
+
+#a-propos-de-moi .heading h2 {
+    color: blue;
+}
+
+#a-propos-de-moi .identite{
+        background-image: url("../images/sea-1337565_1280.jpg");
+        width:100%;
+        height : 600px;
+        margin: 0 auto;
+}
+
+.nom h3{
+    padding-top:20px;
+    text-align: center;
+    color:blue;
+    font-size : 40px;
+    text-shadow: #fff 1px 1px, #fff -1px 1px, #fff -1px -1px, #fff 1px -1px;/*entoure les lettres de blanc*/
+}
+
+.telephone h5, .mail h5{
+    padding-top:10px;
+    color:blue;
+    font-size:30px;
+    text-shadow: #fff 1px 1px, #fff -1px 1px, #fff -1px -1px, #fff 1px -1px;
+}
+
+.telephone{
+    float:right;
+    padding-right:20px;
+}
+
+/*footer*/
+footer{
+    background: #333;
+    padding: 10px 0 20px;/*haut gauche bas*/
+}
+footer .glyphicon {
+    font-size :25px;
+    margin: 20px;
+    color : #fff;
+    height: 30px;
+}
+footer .glyphicon:hover{
+    font-size :30px;
+}
+footer h5{
+    color : #fff;
+    font-weight:normal;/*enleve le gras*/
+}

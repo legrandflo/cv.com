@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CV FLorence LEGRAND</title>
+    <meta charset="utf-8" />
+    <!-- pour responsive avec la largeur du device imperatif pour bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--pour utiliser boostrap telecharger CDN .css et .js sur site de bootstrap et CDN jquery .js sur site jquery google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--le script set a obtenir un scroll quand on clique sur une categorie du menu-->
+    <script src="js/script.js"></script>
+    <!--ne pas placer cette ligne plus haut-->
+</head>
+
+<!--pour lier la section de la navbar avec la section de la page où on est et blanchir le background de la categorie-->
+<!--ajouter data-spy="scroll" data-target=".navbar" data-offset="60" et aussi le background de la navbar dans css-->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--scrollspy-->
+    <!--menu-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <!--fixed top pour rester fier en haut ecran-->
+        <div class="container">
+            <div class="navbar-header">
+                <!--bouton 3 traits horizontaux pour smartphone-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!--data target lien avec le contenu du menu-->
+                    <!--les 3 barres-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!--menu-->
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">Moi</a>
+                    </li>
+                    <li>
+                        <a href="#competences">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#projet-stages-experiences">Expériences</a>
+                    </li>
+                    <li>
+                        <a href="#formation-education">Formations</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#centres-interets">Centres d'intérêts</a>
+                    </li>
+                    <li>
+                        <a href="#a-propos-de-moi">A propos de moi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--header avec photo nom descriptif bouton et image de fond-->
+    <section id="about" class="container-fluid">
+        <!--fluid prend toute la largeur de la page-->
+        <div class="col-xs-8 col-md-4 profile-picture">
+            <img src="images/PHOTO31.jpg" alt="Florence Legrand" class="photo">
+            <!--ajoute img-thumbnail si bord blanc autour photo-->
+        </div>
+        <div class="heading">
+            <h1>Florence</h1>
+            <h3>Développeuse Web</h3>
+            <a href="docs/CVFlorenceLegrand.pdf" class="button1">Télécharger CV</a>
+        </div>
+    </section>
+
+    <section id="competences">
+        <div class="ligne-bleue"></div>
+        <!-- creation de la ligne bleue..n'existe pas en bootstrap-->
+        <div class="heading">
+            <h2>Compétences</h2>
+        </div>
+        <!--A VERIFIER CAR JE FAIS PAS DES BARRES DE COMPETENCES-->
+        <div class="container">
+            <div class="row">
+                <!--une ligne comprenant les 3 lignes de progress bar-->
+                <div class="col-md-6">
+                    <!--2 collonnes de 6-->
+                    <div class="progress">
+                        <!--barre grise-->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            <h5>HTML 85%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <!--barre grise-->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            <h5>CSS 85%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <!--barre grise-->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            <h5>JAVASCRIPT 90%</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!--2 collonnes de 6-->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            <h5>JQUERY 85%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <!--barre grise-->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <h5>BOOTSTRAP 80%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <!--barre grise-->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            <h5>ANGULAR 75%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projet-stages-experiences">
+        <div class="container">
+            <div class="ligne-blanche"></div>
+            <!--ligne blanche-->
+            <div class="heading">
+                <h2>Projets - Stages - Expériences</h2>
+            </div>
+            <ul class="timeline">
+                <!--chaque contenu des boites est une liste-->
+                <li>
+                    <!--correspond au 1er bloc d'experiences-->
+                    <div class="timeline-badge">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                    </div>
+                    <!--glyphicon de la valise-->
+                    <div class="timeline-panel-container">
+                        <!--ce sera la boite blanche-->
+                        <div class="timeline-panel">
+                            <!--contenu de la boite-->
+                            <div class="timeline-heading">
+                                <h3>Check Car Fleet</h3>
+                                <h4>Développeuse Web</h4>
+                                <p class="text-muted">
+                                    <small class="glyphicon glyphicon-time"> </small> Mars - Mai 2018</p>
+                                <!--small reduit le glyphicone de horloge-->
+                            </div>
+                            <div class="timeline-body">
+                                <p>Création d'une application web</p>
+                                <p>Utilisation de NgbModal de Boostrap pour Angular</p>
+                                <p>Versionning avec Git et GitHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--correspond au 2ieme bloc d'experiences-->
+                    <div class="timeline-badge">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                    </div>
+                    <!--glyphicon de la valise-->
+                    <div class="timeline-panel-container-inverted">
+                        <!--ce sera la boite blanche, inverted pour mettre a gauche-->
+                        <div class="timeline-panel">
+                            <!--contenu de la boite-->
+                            <div class="timeline-heading">
+                                <h3>Compte CO2</h3>
+                                <h4>Développeuse Web</h4>
+                                <p class="text-muted">
+                                    <small class="glyphicon glyphicon-time"> </small> Décembre 2017</p>
+                                <!--small reduit le glyphicone de horloge-->
+                            </div>
+                            <div class="timeline-body">
+                                <p>Création de 2 widgets en React et Javascript</p>
+                                <p>Modification du site web en AngularJS, en utilisant Git et GitLab</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--correspond au 3ieme bloc d'experiences-->
+                    <div class="timeline-badge">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                    </div>
+                    <!--glyphicon de la valise-->
+                    <div class="timeline-panel-container">
+                        <!--ce sera la boite blanche-->
+                        <div class="timeline-panel">
+                            <!--contenu de la boite-->
+                            <div class="timeline-heading">
+                                <h3>Nom Entreprise</h3>
+                                <h4>Intitulé du poste</h4>
+                                <p class="text-muted">
+                                    <small class="glyphicon glyphicon-time"> </small> Date </p>
+                                <!--small reduit le glyphicone de horloge-->
+                            </div>
+                            <div class="timeline-body">
+                                <p>description des réalisations</p>
+                                <p>description des réalisations</p>
+                                <p>description des réalisations</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="formation-education">
+        <div class="ligne-bleue"></div>
+        <!--ligne bleue-->
+        <div class="heading">
+            <h2>Formation - Education</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                    <div class="education-block">
+                        <h5>2017 - 2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Code.bzh - Brest</h3>
+                        <p class="ecole-label">Ecole Labellisée Grande Ecole du numérique</p>
+                        <h4>Développeur Web</h4>
+                        <div class="ligne-bleue"></div>
+                        <p>Création de site web</p>
+                        <p>Wordpress - MailJet - SEO</p>
+                        <p>HTML - CSS - Bootstrap - Javascript - MySQL - PHP - Angular - Node.js</p>
+                        <p> -------------- </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                    <div class="education-block">
+                        <h5>2017 - 2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Openclassrooms</h3>
+                        <h4>Certifications Online</h4>
+                        <div class="ligne-bleue"></div>
+                        <p>Apprenez à créer votre site web avec HTML5 et CSS3</p>
+                        <p>Apprenez à coder en Javascript</p>
+                        <p>Introduction à Jquery</p>
+                        <p>Concevez votre site web avec PHP et MySQL</p>
+                        <p>Développez des applications Web avec Angular</p>
+                        <p>Simplifiez vous la vie avec LESS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                    <div class="education-block">
+                        <h5>2014</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>AFPA - Brest</h3>
+                        <h4>Formation bureautique</h4>
+                        <div class="ligne-bleue"></div>
+                        <p>Word - Excel - PowerPoint - Google Drive</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                    <div class="education-block">
+                        <h5>1993</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>IUT - Belfort</h3>
+                        <h4>DUT informatique</h4>
+                        <div class="ligne-bleue"></div>
+                        <p>Analyste - programmeur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="ligne-blanche"></div>
+            <!--ligne blanche-->
+            <div class="heading">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Carte Anniversaire Interactive</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://legrandflo.github.io/CarteAnniversaireMusicale/" target="_blank " data-toggle="tooltip" data-placement="bottom"
+                        title="HTML - CSS - Javascript - JQuery">
+                        <!--ajouter id et title pour appeler fonction tolltip qui est dans le script.js-->
+                        <img src="images/CarteAnniversaire.PNG" alt="Carte Anniversaire">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Carte Anniversaire Animée</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://legrandflo.github.io/carteAnniversaireAnimee/" target="_blank " data-toggle="tooltip" data-placement="bottom"
+                        title="HTML - Javascript - JQuery">
+                        <img src="images/CarteAnniversaireAnimee.PNG" alt="Carte Anniversaire Animee">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Jeu Devinette de nombre entre 1 et 100</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://codepen.io/flegrand/pen/VyOVGN" target="_blank " data-toggle="tooltip" data-placement="bottom"
+                        title="HTML - Javascript">
+                        <img src="images/DevinetteNombre.PNG" alt="Devinette Nombre">
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-4">
+                    <h5>Site de tchats</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://github.com/legrandflo/siteMessagerie" target="_blank " data-toggle="tooltip" data-placement="bottom"
+                        title="HTML - CSS - Boostrap - JS - JQuery - PHP avec base MySQL">
+                        <img src="images/siteMessagerie.PNG" alt="Site Messagerie">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Jeu Pierre Feuille Ciseaux</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://github.com/legrandflo/Jeu-PierreFeuilleCiseaux-Angular" target="_blank " data-toggle="tooltip"
+                        data-placement="bottom" title="HTML - CSS -Bootstrap - JS - Angular - Node.js">
+                        <img src="images/PierreFeuilleCiseaux.PNG" alt="Pierre Feuille Ciseaux">
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <h5>Site de gestion d'allumage d'appareils électroménagers</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://github.com/legrandflo/listesAppareils" target="_blank " data-toggle="tooltip" data-placement="bottom"
+                        title="HTML - CSS - Boostrap - JS - Angular - Node.js avec base Firebase">
+                        <img src="images/ListeAppareils.PNG" alt="Liste Appareils">
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-4">
+                    <h5>Blog de posts - CRUD(Create Read Update Delete)</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://github.com/legrandflo/sitePost" target="_blank " data-toggle="tooltip" data-placement="bottom"
+                        title="HTML - CSS - Boostrap - JS - Angular - Node.js avec base Firebase">
+                        <img src="images/BlogPosts.PNG" alt="Blog Posts">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Site de gestion de listes - CRUD</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="https://github.com/legrandflo/gestionDeListes-CRUD-Angular" target="_blank " data-toggle="tooltip"
+                        data-placement="bottom" title="HTML - CSS - Boostrap(ngbModal) - JS - Angular - Node.js">
+                        <img src="images/gestionListes.PNG" alt="Gestion Listes Angular">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Site école de surf</h5>
+                    <!--thumbnail donne le bord blanc de la boite / target ouvre la page dans un nouvel onglet-->
+                    <a class="thumbnail" href="video/siteSurf.avi" target="_blank " data-toggle="tooltip" data-placement="bottom" title="Wordpress">
+                        <img src="images/siteSurf.PNG" alt="Liste Appareils">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="centres-interets">
+        <div class="container ">
+            <div class="ligne-bleue "></div>
+            <!--ligne bleue-->
+            <div class="heading ">
+                <h2>Centres d'intérêts</h2>
+            </div>
+            <!--class carousel de boostrap / id est nom du carousel-->
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <!--pour les fleches-->
+                    <!--data target pour lier la li au carousel avec id-->
+                    <!--data slide to numero position du li dans carousel-->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <!--class active pour afficher celui la au demarrage-->
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+                <!--pour le contenu du carousel-->
+                <div class="carousel-inner" role="listbox">
+                    <!--listbox pour malvoyant-->
+                    <div class="item active">
+                        <img src="images/10771490-femme-qui-marche-nordique-Banque-d'images.jpg" alt="marche nordique">
+                        <h3>Marche nordique</h3>
+                    </div>
+                    <div class="item">
+                        <img src="images/aquagym2.jpg" alt="aquagym">
+                        <h3>Aquagym</h3>
+                    </div>
+                    <div class="item">
+                        <img src="images/ski.png" alt="ski">
+                        <h3>Ski</h3>
+                    </div>
+                    <div class="item">
+                        <img src="images/diy.jpg" alt="Do It Yourself">
+                        <h3>Do It Yourself</h3>
+                    </div>
+                    <div class="item">
+                        <img src="images/bricolage.jpg" alt="bricolage">
+                        <h3>Bricolage</h3>
+                    </div>
+                    <div class="item">
+                        <img src="images/machinecoudre.jpg" alt="couture">
+                        <h3>Couture</h3>
+                    </div>
+                </div>
+                <!--pour les fleches-->
+                <!--fleche gauche-->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <!--fleche droite-->
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos-de-moi">
+        <div class="container ">
+            <div class="ligne-bleue "></div>
+            <!--ligne bleue-->
+            <div class="heading ">
+                <h2>A propos de moi</h2>
+            </div>
+            <div class="identite">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                        <div class="nom">
+                            <h3>Florence LEGRAND</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                        <div class="telephone">
+                            <h5>0668423527</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!--2 colonnes se reduit en 1 quand <768px taille tablette grace au sm-->
+                        <div class="mail">
+                            <h5>flo.legrand@sfr.fr</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <a href="#about">
+            <!--lien vers la section about avec son id pour remonter vers le haut-->
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <h5>© Copyright - 2018 - Florence LEGRAND</h5>
+    </footer>
+</body>
+
+</html>
