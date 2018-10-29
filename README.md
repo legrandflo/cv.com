@@ -1,2 +1,2 @@
 # cv.com
-code de mon cv
+code de mon cv avec animation
