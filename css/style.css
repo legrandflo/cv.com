@@ -1,3 +1,4 @@
+/*INFO bleu #5472AE*/
 /* GENERAL*/
 
 body {
@@ -13,16 +14,11 @@ h6 {
     font-weight: bold;
 }
 
-.photo {
-    border-radius: 100px;
-    border: 2px solid #aaa;
-    width: 300px;
-    height: 300px;
-}
 
 section {
     /*marge entre toute section top left bottom right*/
     padding: 45px 0 80px 0;
+    overflow:hidden;
 }
 
 section .heading {
@@ -41,7 +37,7 @@ section .heading h2 {
 .ligne-bleue {
     width: 300px;
     height: 3px;
-    background: blue;
+    background: #5472AE;
     margin: 0 auto;
     /*centrer la ligne*/
 }
@@ -54,9 +50,20 @@ section .heading h2 {
     /*centrer la ligne*/
 }
 
+.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
 /*MENU*/
 .navbar{
-    background: blue;
+    background: black;
     font-size: 12px;
     letter-spacing: 4px;/*espacement entre les lettres*/
     text-transform:uppercase;
@@ -74,8 +81,8 @@ section .heading h2 {
     color: #fff !important;/*important car il faut changer la couleur donner par la class bootstrap qui est prioritaire*/
 }
 .navbar-nav li a:hover, .navbar-nav li.active a  {/*quand on passe sur une categorie du menu*/
-    color: blue !important;
-    background-color: #fff !important;
+    color: black !important;
+    background-color: #5472AE !important;
 }
 /*enlever la bordure du bouton de 3 traits*/
 .navbar-default .navbar-toggle{
@@ -86,31 +93,31 @@ section .heading h2 {
 }
 
 /* ABOUT */
-
-#about {
-    padding-top: 100px;    /*marge du dessus*/
-    padding-bottom:100px;/*marge du dessous--occupe la taille ecran en hauteur*/
-    background-image: url("../images/keyboard-1983410_1920.jpg");
-    border : 5px solid blue;
-    
+.img1{
+        background-image: url("../images/office-1246484_1920.jpg");
+min-height: 100%;
 }
 
-.profile-picture {
-    /* photo*/
-    text-align: center;
-    margin: 0 auto;
-    /* photo au centre*/
-    float: none;
-    /* photo au centre pour annuler float : left qui est avec col-md-4 de bootstrap*/
-    padding-top:200px;
+
+#about {
+    padding-top: 150px;    /*marge du dessus*/
+    padding-bottom:150px;/*marge du dessous--occupe la taille ecran en hauteur*/
+    border : 5px solid #5472AE;
+    
+}
+#about .heading{
+    float:left;
+    padding-left: 200px;
 }
 
 #about .heading h1 {
+    padding-top: 100px;
     /*h1 du heading = florence*/
-    color: blue;
+    color: #5472AE;
     /* couleur blanche*/
     text-transform: uppercase;
     /* en majuscule */
+    text-shadow: #000 0.1em 0.1em 0.1em;
 }
 
 #about .heading h3 {
@@ -139,16 +146,37 @@ section .heading h2 {
     /*bord arrondi*/
     transition: all 0.3s ease-in 0s;
     /* change le temps de modification du bouton au hover passe a 0.3s*/
+    background-color: #404040;
 }
 
 .button1:hover {
     /*changement du style donné par bootstrap au passage de la souris*/
-    background: white;
-    /* fond blanc*/
-    color: blue;
-    /*texte bleu*/
+    background: #5472AE;
+    /* fond bleu*/
+    color: white;
+    /*texte blanc*/
     text-decoration: none;
     /*retiré le souligné du texte*/
+}
+
+.fa{
+    display:inline-block;
+    font : normal normal normal 14px/1 FontAwesome;
+    font-size: 48px;
+    text-rendering: auto;
+    opacity:1;
+    padding : 20px;
+}
+.icon {
+    color: #5472AE;
+}
+.icon :hover{
+    color: #404040;
+}
+.icons {
+    text-align : center;
+        color: #5472AE;
+
 }
 
 img {
@@ -158,7 +186,10 @@ img {
 }
 
 /*competences*/
-
+.img2{
+            background-image: url("../images/keyboard-1983410_1920.jpg");
+min-height: 400px;
+}
 #competences {
     /*zone competences*/
     background: #fff;
@@ -167,39 +198,35 @@ img {
 
 #competences .heading h2 {
     /*titre competences*/
-    color: blue;
+    color: #404040;
+}
+#competences .container{
+    padding-left:150px;
+    padding-right:150px;
 }
 
-#competences .progress {
-    /*zone grise des progress barre*/
-    height: 100%;
-    margin: 30px 20px;
-    /*marge entre chaque ligne de progress*/
-    backface-visibility: #ddd;
-    /*fond gris des progress barres*/
-}
-
-#competences .progress-bar {
-    /*chaque progress-bar la partie coloré*/
-    background: blue;
-    margin: 10px 10px;
-    /*marge de gris en haut et bas et côté*/
-}
-
-#competences .progress h5 {
-    /*titre h5 qui sont dans progress bar*/
-    text-shadow: 1px 1px 1px black;
-    /*ombre*/
+#competences .img-responsive{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+margin-bottom: 10px;
+width: 75px;
+height: 75px;
 }
 
 /*expériences*/
 
+.img3{
+            background-image: url("../images/technology-791029_1920.jpg");
+min-height: 400px;
+}
 #projet-stages-experiences {
-    background: blue;
+    background:#404040;
 }
 
 #projet-stages-experiences .heading h2 {
-    color: white;
+    color: #5472AE;
 }
 
 ul {
@@ -250,7 +277,7 @@ ul {
 
 .timeline li .timeline-badge {
     /* glyphicone de la valise placé au centre et dans un rond gris*/
-    color: blue;
+    color: #5472AE;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -329,17 +356,20 @@ ul {
 }
 
 .timeline-heading h4 {
-    color: blue;
+    color: #5472AE;
 }
 
 /*formation-education*/
-
+.img4{
+            background-image: url("../images/sticker-1732949_1920.jpg");
+min-height: 400px;
+}
 #formation-education {
     background: #fff;
 }
 
 #education .heading h2 {
-    color: blue;
+    color: #404040;
 }
 
 .education-block {
@@ -370,15 +400,16 @@ ul {
 }
 
 .education-block .glyphicon {
-    font-size: 40px;
+   font-size: 20px;
 }
 
 .education-block h3 {
-    color: blue;
+    color: black;
 }
 
 .education-block h4 {
     margin-bottom: 20px;
+    color : #5472AE;
 }
 
 .education-block .ecole-label {
@@ -394,13 +425,16 @@ ul {
 }
 
 /*portfolio*/
-
+.img5{
+            background-image: url("../images/tools-498202_1920.jpg");
+min-height: 400px;
+}
 #portfolio {
-    background: blue;
+    background: #404040;
 }
 
 #portfolio .heading h2 {
-    color: white;
+    color: #5472AE;
 }
 
 #portfolio h5{
@@ -435,22 +469,25 @@ ul {
 }
 #portfolio .thumbnail + .tooltip > .tooltip-inner{
     background-color: yellow;
-    color:blue;
+    color:#5472AE;
 }
 
 
 /*centres d'interets*/
-
+.img6{
+            background-image: url("../images/feedback-1213042_1920.jpg");
+min-height: 400px;
+}
 #centres-interets {
     background: #fff;
 }
 
 #centres-interets .heading h2 {
-    color: blue;
+    color: #404040;
 }
 #centres-interets .carousel{
-    margin-top:200px;
-    margin-bottom :200px;
+    margin-top:50px;
+    margin-bottom :50px;
 }
 
 .carousel-control.left,
@@ -458,7 +495,7 @@ ul {
     /*fleche gauche et droite*/
     background-image: none;
     /*on enleve leur fond gris*/
-    color: blue;
+    color: #5472AE;
     /*on les colore en blue*/
 }
 /*faire apparaitre les ronds rouges sous les slides ---carousel-indicators*/
@@ -466,16 +503,16 @@ ul {
     bottom: 0px;
 }
 .carousel-indicators li {
-    border-color: blue;
+    border-color: #5472AE;
 }
 .carousel-indicators li.active {/*attention li.active pas li:active*/
-    background-color: blue;
+    background-color: #5472AE;
 }
 #myCarousel .item {
     padding: 40px 30px;
 }
 #myCarousel .item h3 {
-    color: blue;
+    color: #5472AE;
     font-style: italic;
 }
 .item img{
@@ -485,12 +522,17 @@ ul {
 }
 
 /*a propos de moi*/
+.img7{
+            background-image: url("../images/road-1668916_1920.jpg");
+min-height: 400px;
+}
 #a-propos-de-moi {
     padding-bottom:30px;
+    background: #404040;
 }
 
 #a-propos-de-moi .heading h2 {
-    color: blue;
+    color: #5472AE;
 }
 
 #a-propos-de-moi .identite{
@@ -501,18 +543,29 @@ ul {
 }
 
 .nom h3{
-    padding-top:20px;
+    padding-top:40px;
     text-align: center;
-    color:blue;
+    color:#5472AE;
     font-size : 40px;
-    text-shadow: #fff 1px 1px, #fff -1px 1px, #fff -1px -1px, #fff 1px -1px;/*entoure les lettres de blanc*/
+    text-shadow: #fff 0.1em 0.1em 0.1em;
 }
 
+.photo {
+    border-radius: 30px;
+    /*border: 2px solid #aaa;*/
+    width: 150px;
+    height: 150px;
+    margin-left : 130px;
+    box-shadow: #aaa 0.1em 0.1em 0.1em;
+
+}
+
+
 .telephone h5, .mail h5{
-    padding-top:10px;
-    color:blue;
+    padding-top:100px;
+    color:#5472AE;
     font-size:30px;
-    text-shadow: #fff 1px 1px, #fff -1px 1px, #fff -1px -1px, #fff 1px -1px;
+    text-shadow: #fff 0.1em 0.1em 0.1em;
 }
 
 .telephone{
